@@ -13,6 +13,6 @@ jobs:
     
     - name: Compilar todos mis ejercicios en C automáticamente
       run: |
-        for archivo in *.c; do
+        for archivo in */*.c; do
           gcc "$archivo" -o "${archivo%.c}"
         done
