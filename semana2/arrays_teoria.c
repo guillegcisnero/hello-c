@@ -92,6 +92,19 @@ int main() {
     // Ahora bien, un array no cumple con la regla de passed by value aplicado a las variables entre funciones, ya que cuando se pasa un array a una función, lo que se pasa es la dirección de memoria del primer elemento del array, y no una copia completa del array. 
     // Por lo tanto, cualquier modificación realizada en el array dentro de la función afectará al array original fuera de la función.
     
+    // Array vacio que es llenado por el usuario mediante un bucle for y la función scanf
+    printf("\n");
+    printf("Ejemplo Nro. 8 de llenado de un array por el usuario:\n");
+    int array_usuario[5];
+    for (int i = 0; i < 5; i++) {
+        printf("Ingrese el valor para el elemento %d: ", i);
+        scanf("%d", &array_usuario[i]);
+    }
+    // Acceso a los elementos del array ingresado por el usuario y su impresión
+    for (int i = 0; i < 5; i++) {
+        printf("Elemento %d: %d\n", i, array_usuario[i]);
+    }
+    
 
     return 0;
 }
