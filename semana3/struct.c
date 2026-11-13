@@ -13,7 +13,8 @@ Por ejemplo, se puede crear un array de estructuras para almacenar información 
 
 #include <stdio.h>
 #include <string.h>
-
+#include <stdlib.h>
+#include <ctype.h>
 
 int main ()
 {
@@ -27,7 +28,7 @@ int main ()
 
     Persona p;
 
-    p = (Persona){0};
+    
     p.edad = 25;
     strcpy(p.nombre, "Juan");
     printf("Nombre: %s\n", p.nombre);
