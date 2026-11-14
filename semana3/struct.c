@@ -52,6 +52,6 @@ int main ()
     printf("Ingrese la edad de la persona; ");
     scanf("%d", &p3.edad);
     printf("Nombre: %s y edad: %d\n", p3.nombre, p3.edad);
-
+    
     return 0;
 }
